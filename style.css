@@ -35,10 +35,11 @@ h1 {
 }
 
 input {
+  -webkit-user-select: text;
   border: none;
   border-radius: 100px;
   padding: 2% 5%;
-  max-width: 100px;
+  min-width: 50px;
   outline: none;
   background-color: #403F4C;
   color: white;
