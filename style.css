@@ -38,7 +38,7 @@ input {
   border: none;
   border-radius: 100px;
   padding: 2% 5%;
-  max-width: 50px;
+  max-width: 100px;
   outline: none;
   background-color: #403F4C;
   color: white;
@@ -47,5 +47,5 @@ input {
 .col-sm-4 {
   display: flex;
   justify-content: center;
-  margin: 20px 0px;
+  padding: 10px 0px;
 }/*# sourceMappingURL=style.css.map */
