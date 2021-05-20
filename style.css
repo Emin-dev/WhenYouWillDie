@@ -14,6 +14,7 @@ body {
   background-color: #F9DC5C;
   padding: 10%;
   border-radius: 100px;
+  max-width: 80%;
 }
 
 .box {
@@ -46,4 +47,5 @@ input {
 .col-sm-4 {
   display: flex;
   justify-content: center;
+  margin: 10% 2%;
 }/*# sourceMappingURL=style.css.map */
