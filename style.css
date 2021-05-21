@@ -10,7 +10,7 @@ body {
 }
 
 #me {
-  font-size: 22PX;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -26,10 +26,10 @@ input {
   border: none;
   border-radius: 100px;
   padding: 2% 5%;
-  min-width: 50px;
   outline: none;
   background-color: #403F4C;
   color: white;
+  max-height: 40px;
 }
 
 .col-sm-4 {
