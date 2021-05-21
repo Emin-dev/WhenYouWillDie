@@ -4,12 +4,12 @@ $(document).ready(function () {
         $(this).addClass("die");
     });
 
-    let life = 0;
+    
     $("#me").click(function (e) { 
         e.preventDefault();
-        let prelife = $("#yes").html();
-        
-        while (prelife == life) {
+        let prelife = parseInt($("#yes").html())
+        let life = 0 ;
+        function run() {
             while (life < 70 || life > 100 ) {
                 life = parseInt($("input").val()) +  Math.floor(Math.random() * 100);
             }
@@ -17,8 +17,13 @@ $(document).ready(function () {
                 life += Math.floor(Math.random() * 5)
             }
         }
-        
-        
+        run();
+        let count = 0;
+        while (prelife == life) {
+            count++;
+            run();
+        }
+        console.log(count)
         $("#yes").html(life);
     });
 
