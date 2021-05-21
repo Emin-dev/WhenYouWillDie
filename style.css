@@ -30,6 +30,7 @@ input {
   background-color: #403F4C;
   color: white;
   max-height: 40px;
+  min-width: 100px;
 }
 
 .col-sm-4 {
