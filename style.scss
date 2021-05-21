@@ -1,6 +1,4 @@
-*{
-    user-select: none;
-}
+
 body {
   background-color:#E84855;
 }
@@ -29,7 +27,6 @@ h1{
     cursor: none;
 }
 input{
-    -webkit-user-select: text;
     border: none;
     border-radius: 100px;
     padding: 2% 5%;
