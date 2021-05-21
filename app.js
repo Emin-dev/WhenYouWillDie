@@ -4,13 +4,21 @@ $(document).ready(function () {
         $(this).addClass("die");
     });
 
-
+    let life = 0;
     $("#me").click(function (e) { 
         e.preventDefault();
+        let prelife = $("#yes").html();
         
-
-        let life = 20 +  Math.floor(Math.random() * 80) + parseInt($("input").val());
-
+        while (prelife == life) {
+            while (life < 70 || life > 100 ) {
+                life = parseInt($("input").val()) +  Math.floor(Math.random() * 100);
+            }
+            if ((life + Math.floor(Math.random() * 105)) > 200 ) {
+                life += Math.floor(Math.random() * 5)
+            }
+        }
+        
+        
         $("#yes").html(life);
     });
 
